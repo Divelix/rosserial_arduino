@@ -1,2 +1,1 @@
-# rosserial_arduino
-Pre-built ROS bindings library for Arduino board.
+ROS bindings for Arduino board. Ready to be included as PlatformIO project dependency (`lib_deps` inside `arduino_env.ini`).
