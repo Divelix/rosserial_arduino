@@ -1,7 +1,7 @@
 {
     "name": "rosserial_arduino",
-    "version": "0.0.1",
-    "description": "Pre-built library for arduino board to enable capabilities of communication with ROS (built from rosserial 0.9.2)",
+    "version": "0.0.2",
+    "description": "Pre-built ROS bindings for Arduino board (built via rosserial 0.9.2)",
     "keywords": "ros, rosserial, arduino",
     "repository": {
         "type": "git",
@@ -19,17 +19,6 @@
         }
     ],
     "license": "MIT",
-    "headers": "ros.h",
-    "examples": [
-        {
-            "name": "Publisher",
-            "base": "examples",
-            "files": ["publishToTopic.cpp"]
-        },
-        {
-            "name": "Subscriber",
-            "base": "examples",
-            "files": ["subscribeToTopic.cpp"]
-        }
-    ]
+    "frameworks": "arduino",
+    "platforms": "atmelavr"
 }

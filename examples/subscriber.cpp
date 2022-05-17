@@ -5,9 +5,8 @@ void subscriber_callback(const std_msgs::String &received_ros_str) {
     Serial.println(received_ros_str.data);
 }
 
-const char * topic_name = "arduino_topic";
 ros::NodeHandle nh;
-ros::Subscriber<std_msgs::String> my_subscriber(topic_name, &subscriber_callback);
+ros::Subscriber<std_msgs::String> my_subscriber("arduino_topic", &subscriber_callback);
 
 void setup() {
   nh.getHardware()->setBaud(57600);
